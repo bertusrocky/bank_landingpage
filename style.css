@@ -1,0 +1,30 @@
+#loading, #results{
+  display:none;
+}
+
+#topSection{
+  background-color:#065ce4;
+  border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+.nav-link{
+  color:white !important;
+  font-weight: bold;
+}
+#topRow{
+  height: 70vh;
+}
+.col-md-6{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-success{
+  background-color: #01e73c;
+  border-radius:25px;
+  padding:10px;
+  width:15vw;
+}
