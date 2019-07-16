@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d7456ee4cf.js"></script>
 
-    <title>Loan Calculator</title>
+    <title>ezBanking</title>
   </head>
   <body>
   
@@ -63,7 +63,7 @@
 
         <!-- header -->
         <div id="topRow"  class="row">
-          <div id="headerLeftCol" class="col-md-5 offset-md-1 col-sm-12">
+          <div id="headerLeftCol" class="col-md-5 offset-md-1 col-lg-5 offset-lg-1 col-sm-12">
             <div>
               <h1 class="mainH1">
                 Contactless. Safe,<br>
@@ -77,44 +77,44 @@
               <span><button type="button" class="btn btn-light videoBtn"><i class="fas fa-play"></i></button><p class="videoText">Watch Video</p></span>
             </div>
           </div>
-          <div id="headerRightCol" class="col-md-5 offset-md-1">
+          <div id="headerRightCol" class="col-md-5 offset-md-1 col-lg-5 offset-lg-1">
               <img src="img/phone.png" id="phone" class="img-fluid" alt="Responsive image">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- second section -->
+    <!-- second section aka cards -->
     <section id="secondSection">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 col-lg-4">
             <div class="card cards">
               <div class="card-body text-center">
                 <img src="img/loan.png" width="100px" height="100px" class="img-fluid" alt="Responsive image">
                 <h3 class="card-title cardsTitle">Personal Loans</h3>
                 <p class="card-text">Phasellus at pretium odio. Sed tempus orci neque, sed lacinia nulla pellentesque eu. Cras molestie.</p>
-                <a href="#" class="btn btn-success btn-lg btnMain">Find out More</a>
+                <a href="#" class="btn btn-primary btn-lg cardsBtn">Find out More</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 col-lg-4">
             <div class="card cards">
               <div class="card-body text-center">
                   <img src="img/travel.png" width="100px" height="100px" class="img-fluid" alt="Responsive image">
                   <h3 class="card-title cardsTitle">Travel Money</h3>
                   <p class="card-text">Phasellus at pretium odio. Sed tempus orci neque, sed lacinia nulla pellentesque eu. Cras molestie.</p>
-                <a href="#" class="btn btn-success btn-lg btnMain">Find out More</a>
+                <a href="#" class="btn btn-primary btn-lg cardsBtn">Find out More</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-4 col-sm-12 col-lg-4">
             <div class="card cards">
               <div class="card-body text-center">
                   <img src="img/piggy.png" width="100px" height="100px" class="img-fluid" alt="Responsive image">
                   <h3 class="card-title cardsTitle">Saving Accounts</h3>
                   <p class="card-text">Phasellus at pretium odio. Sed tempus orci neque, sed lacinia nulla pellentesque eu. Cras molestie.</p>
-                <a href="#" class="btn btn-success btn-lg btnMain">Find out More</a>
+                <a href="#" class="btn btn-primary btn-lg cardsBtn">Find out More</a>
               </div>
             </div>
           </div>
@@ -122,64 +122,56 @@
       </div>
     </section>
     
-    <!-- loan calculator -->
+    <!-- third section aka app stat -->
     <section id="thirdSection">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="card card-body text-center mt-5">
-            <h1 class="heading display-5 pb-3">Loan Calculator</h1>
-            <form id="loan-form">
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-text">£</span>
-                  <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
-                </div>
-              </div>
-              <div class="form-group">
-                  <div class="input-group">
-                    <span class="input-group-text">%</span>
-                    <input type="number" class="form-control" id="interest" placeholder="Interest">
-                  </div>
-                </div>
-                <div class="form-group">
-                    <input type="number" class="form-control" id="years" placeholder="Years To Repay">
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Calculate" class="btn btn-dark btn-block">
-                </div>
-            </form>
-            <!-- loader-->
-            <div id="loading">
-              <img src="img/preloader.gif" alt="">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 text-center">
+              <h2 class="mb-5 font-weight-bold">App Statistics</h2>
             </div>
-          <div id="results" class="pt-4">
-            <h5>Results</h5>
-            <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-text">Monthly Payment</span>
-                  <input type="number" class="form-control" id="monthly-payment" disabled>
-                </div>
-              </div>
-              <div class="form-group">
-                  <div class="input-group">
-                    <span class="input-group-text">Total Payment</span>
-                    <input type="number" class="form-control" id="total-payment" disabled>
-                  </div>
-                </div>
-                <div class="form-group">
-                   <div class="input-group">
-                      <span class="input-group-text">Total Interest</span>
-                      <input type="number" class="form-control" id="total-interest" disabled>
-                  </div>
-                </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-2 col-6">
+              <p class="text-center font-weight-bold statNum">8756</p>
+              <p class="text-center font-weight-bold statText">Users</p>
+            </div>
+            <div class="col-md-2 col-6">
+              <p class="text-center font-weight-bold statNum">23K</p>
+              <p class="text-center font-weight-bold statText">Likes</p>
+            </div>
+            <div class="col-md-2 col-6">
+              <p class="text-center font-weight-bold statNum">521</p>
+              <p class="text-center font-weight-bold statText">Reviews</p>
+            </div>
+            <div class="col-md-2 col-6">
+              <p class="text-center font-weight-bold statNum">100%</p>
+              <p class="text-center font-weight-bold statText">Usability</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+    <!-- fourth section aka smart watch -->
+    <section id="fourthSection">
+      <div class="container pt-5 pb-3">
+        <div class="row">
+          <div class="col-md-6  watchFlexLeft">
+              <img src="img/watch.png" width="342px" height="423px" class="img-fluid" alt="Responsive image">
+          </div>
+          <div class="col-md-6 watchFlexRight">
+            <div class=""> 
+            <h2 class="font-weight-bold">Also Available for Your Connected Wearables</h2>
+            <br>
+            <p class="">Sed id diam sapien. Etiam cursus lacus ac felis molestie euismod. Phasellus erat arcu, rutrum vitae maximus vitae, posuere at.</p>
+            <br>
+            <img src="img/google.png" style="width:222px; height:90px;" class="img-fluid" alt="Responsive image">
+            <img src="img/apple.png" width="200px" height="78px" class="img-fluid" alt="Responsive image">
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-    
+    </section>
+
 
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
