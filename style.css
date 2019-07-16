@@ -4,8 +4,6 @@
  
 #topSection{
   background: linear-gradient(to right,#065ce5,50%,#2eb5fb);
-  border-bottom-left-radius: 50% 15%;
-  border-bottom-right-radius: 50% 15%;
   font-family: 'Montserrat', sans-serif;
   color:white;
 }
@@ -13,22 +11,24 @@
   color:white !important;
 }
 #topRow{
-  height: 83vh;
-}
-.col-md-6{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 90vh;
 }
 
 .col-md-5{
   display: flex;
   align-items: top;
   justify-content: center;
+}
+
+#headerLeftCol{
   margin-top: 5%;
 }
 
-.btn-success{
+#headerRightCol{
+ margin-top:2%;
+}
+
+.btnMain{
   background-color: #04e63c;
   border-radius:25px;
   padding:13px;
@@ -38,7 +38,7 @@
   font-weight: bold;
 }
 
-.bold{
+.mainH1{
   font-weight: bold;
 }
 
@@ -74,6 +74,64 @@
   text-transform: uppercase; 
 }
 
-#imgRadial{
- 
+.loginBtn1{
+  display: none;
+}
+
+#secondSection{
+ background-color: #dbf0fd;
+ height: 60vh;
+}
+
+.cards{
+  height:55vh;
+  margin-top:-10%;
+  box-shadow: 0 5px 3px -1px gray;
+  border-top-left-radius: 25% 20%;
+  border-top-right-radius: 25% 20%;
+  border-bottom-left-radius: 15% 15%;
+  border-bottom-right-radius: 15% 15%;
+  padding-top:15px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.cardsTitle{
+padding-top:20px;
+font-weight: bold;
+}
+
+#thirdSection{
+  background-color: #dbf0fd;
+  height: 60vh;
+ }
+
+
+@media only screen and (max-width: 768px) {
+  #phone {
+    display: none;
+  }
+  #topRow{
+    text-align: center;
+    height: 75vh;
+  }
+  .videoText{
+    display: none;
+  }
+  .mainH1{
+    font-size: 2rem;
+  }
+  #headerRightCol{
+    display: none;
+  }
+
+  .loginBtn1{
+    display: block;
+  }
+  .loginBtn2{
+    display:none;
+  }
+  #secondSection{
+    display:none;
+   }
 }
