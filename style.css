@@ -11,7 +11,7 @@
   color:white !important;
 }
 #topRow{
-  height: 88vh;
+  height: 650px;
 }
 
 #headerLeftCol{
@@ -44,8 +44,7 @@
 
 #phone{
   max-width: 100%;
-  height: 75vh;
-  z-index: 5;
+  height: 26%;
 }
 
 .navbar-brand{
@@ -147,7 +146,7 @@ background-color: #dbf0fd;
 .fifthSection{
   font-family: 'Montserrat', sans-serif;
   width: 100%;
-  height: 80vh;
+  height: 500px;
   position: relative;
 }
 
@@ -227,25 +226,4 @@ padding-top:60px;
     display: none;
   }
 
-}
-
-@media only screen and (min-width: 1400px) {
-.cards{
-  height:35vh;
-  }
-  #secondSection{
-    height: 37vh;
-   }
-   #thirdSection{
-     height: 25vh;
-    }
-    #topRow{
-      height: 60vh;
-    }
-    #phone{
-      height: 55vh;
-    }
-    .fifthSection{
-      height: 43vh;
-    }
 }
