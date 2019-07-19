@@ -8,9 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <!-- sass, fontawesome, scrollreveal js -->
+    <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/d7456ee4cf.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -22,7 +21,7 @@
     <section id="topSection">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand logo" href="#">
+          <a class="navbar-brand" href="#">
               <img src="img/logo.png" width="30px" height="30px" class="img-fluid" alt="Responsive image">
               ezBanking
           </a>
@@ -68,11 +67,11 @@
         </nav>
 
         <!-- header -->
-        <div id="topRow"  class="row">
+        <div class="row">
         <!-- header left column -->
           <div id="headerLeftCol" class="col-md-5 offset-md-1 col-lg-5 offset-lg-1 col-sm-12">
             <div class="mainLeft">
-              <h1 class="mainH1">
+              <h1>
                 Contactless. Safe,<br>
                 secure and faster <br>
                 at the tills.
@@ -104,34 +103,34 @@
         <div class="row">
       <!-- left card -->
           <div class="col-md-4 col-sm-12 col-lg-4">
-            <div class="card cards">
+            <div class="card">
               <div class="card-body text-center">
                 <img src="img/loan.png" width="100px" height="100px" class="img-fluid" alt="Responsive image">
-                <h3 class="card-title cardsTitle">Personal Loans</h3>
+                <h3 class="card-title">Personal Loans</h3>
                 <p class="card-text">Phasellus at pretium odio. Sed tempus orci neque, sed lacinia nulla pellentesque eu. Cras molestie.</p>
-                <a href="#" class="btn btn-primary btn-lg cardsBtn btnShadow">Find out More</a>
+                <a href="#" class="btn btn-primary btn-lg">Find out More</a>
               </div>
             </div>
           </div>
       <!-- center card -->
           <div class="col-md-4 col-sm-12 col-lg-4">
-            <div class="card cards">
+            <div class="card">
               <div class="card-body text-center">
                   <img src="img/travel.png" width="100px" height="100px" class="img-fluid" alt="Responsive image">
-                  <h3 class="card-title cardsTitle">Travel Money</h3>
+                  <h3 class="card-title">Travel Money</h3>
                   <p class="card-text">Phasellus at pretium odio. Sed tempus orci neque, sed lacinia nulla pellentesque eu. Cras molestie.</p>
-                <a href="#" class="btn btn-primary btn-lg cardsBtn btnShadow">Find out More</a>
+                <a href="#" class="btn btn-primary btn-lg">Find out More</a>
               </div>
             </div>
           </div>
        <!-- right card -->
           <div class="col-md-4 col-sm-12 col-lg-4">
-            <div class="card cards">
+            <div class="card">
               <div class="card-body text-center">
                   <img src="img/piggy.png" width="100px" height="100px" class="img-fluid" alt="Responsive image">
-                  <h3 class="card-title cardsTitle">Saving Accounts</h3>
+                  <h3 class="card-title">Saving Accounts</h3>
                   <p class="card-text">Phasellus at pretium odio. Sed tempus orci neque, sed lacinia nulla pellentesque eu. Cras molestie.</p>
-                <a href="#" class="btn btn-primary btn-lg cardsBtn btnShadow">Find out More</a>
+                <a href="#" class="btn btn-primary btn-lg">Find out More</a>
               </div>
             </div>
           </div>
@@ -147,7 +146,7 @@
               <h1 class="mb-5 font-weight-bold headingStat">App Statistics</h1>
             </div>
           </div>
-          <div class="row justify-content-center">
+          <div class="row">
             <div class="col-md-2 col-6 statUser">
               <p class="text-center font-weight-bold statNum">8756</p>
               <p class="text-center font-weight-bold statText">Users</p>
@@ -181,7 +180,7 @@
             <h2 class="font-weight-bold">Also Available for Your Connected Wearables</h2>
             <p class="mt-3 mb-4">Sed id diam sapien. Etiam cursus lacus ac felis molestie euismod.
                Phasellus erat arcu, rutrum vitae maximus vitae, posuere at.</p>
-            <div class="googleDiv">
+            <div>
              <a href="#"><img src="img/google.png" style="width:222px; height:90px;" class="img-fluid" alt="Responsive image"></a>
              <a href="#"><img src="img/apple.png" width="200px" height="78px" class="img-fluid" alt="Responsive image"></a>
            </div>
@@ -191,30 +190,30 @@
     </section>
 
 <!-- fifth section aka newsletter-->
-    <section class="fifthSection">
+    <section id="fifthSection">
       <div class="container">
         <div class="row socialRow">
           <div class="col-md-12">
-            <h2 class="text-center font-weight-bold color text-black pt-3">Sign Up For Newsletters</h2>
+            <h2 class="text-center font-weight-bold text-black pt-3">Sign Up For Newsletters</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-8 offset-md-2">
             <div class="formColumn mt-5"> 
-              <input type="text" class="form-control inputField font-weight-bold btnShadow" placeholder="Name">
-              <input type="email" class="form-control inputField font-weight-bold btnShadow" placeholder="Email">
-              <button type="button" class="btn btn-success btn-lg btnMain btnShadow">Subscribe</button>
+              <input type="text" class="form-control font-weight-bold" placeholder="Name">
+              <input type="email" class="form-control font-weight-bold" placeholder="Email">
+              <button type="button" class="btn btn-success btn-lg btnMain">Subscribe</button>
             </div>
           </div>
         </div>
         <div class="row socialRow">
           <div class="col-md-12">
-            <h3 class="text-center font-weight-bold text-black text-u">FOLLOW US</h3>
+            <h3 class="text-center font-weight-bold text-black">FOLLOW US</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 offset-md-4">
-            <div class="formColumn socialDiv mt-4">
+            <div class="formColumn mt-4">
               <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
               <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
               <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
@@ -228,11 +227,11 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-6 offset-md-3 footerColumn">
-            <a href="#" class="footerItem">Features</a>
-            <a href="#" class="footerItem">Pricing</a>
-            <a href="#" class="footerItem">Help</a>
-            <a href="#" class="footerItem">Contact</a>
+          <div class="col-md-6 offset-md-3">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
           </div>
         </div>
         <div class="row text-center mt-4">
@@ -242,11 +241,6 @@
         </div>
       </div>
     </footer>
-
-
-
-
-
 
 
    <!-- Optional JavaScript -->

@@ -1,0 +1,26 @@
+$blueBackground: linear-gradient(to right,#065ce5,50%,#2eb5fb);
+$Montserrat: 'Montserrat', sans-serif;
+$boxShadow: 0 5px 6px -1px gray;
+
+@mixin flexCenterTop{
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+@mixin flexCenterCenter($flexDirection){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $flexDirection;
+}
+
+@mixin mainBtn($btnBackground){
+    border-radius:25px;
+    padding:13px;
+    text-transform: uppercase;
+    width: 180px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $btnBackground;
+}

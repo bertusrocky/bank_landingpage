@@ -13,9 +13,9 @@ sr.reveal('#phone', {
 
 sr.reveal('.mainButtons', {
   duration: 1500,
-  delay: 1500,
+  delay: 1200,
   origin: 'bottom',
-  distance: '60px'
+  distance: '50px'
   });
 
 sr.reveal('.headingStat', {

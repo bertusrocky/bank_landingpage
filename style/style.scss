@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Rubik&display=swap');
+@import "./variables";
+@import "./mediaq";
+
+// First section
+#topSection{
+  background: $blueBackground;
+  font-family: $Montserrat;
+  color: white;
+  .nav-link{
+    color:white;
+  }
+  .row{
+    height: 650px;
+  }
+  #headerLeftCol{
+    @include flexCenterTop();
+    margin-top: 5%;
+  }
+  #headerRightCol{
+    @include flexCenterTop();
+    margin-top:2%;
+  }
+  .btnMain{
+    @include mainBtn(#04e63c);
+  }
+  h1{
+    font-weight: bold;
+  }
+  #phone{
+    max-width: 100%;
+    height: 26%;
+  }
+  .navbar-brand{
+    margin-left:8% !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .videoBtn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .videoText{
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase; 
+  }
+}
+
+// Second Section
+#secondSection{
+  background-color: #dbf0fd;
+  height: 420px;
+.card{
+  height:400px;
+  margin-top:-10%;
+  box-shadow: 0 8px 8px 1px gray;
+  border-radius: 5px;
+  padding-top:15px;
+  font-family: $Montserrat;
+  }
+  h3{
+  padding-top:20px;
+  font-weight: bold;
+  }
+.btn{
+  @include mainBtn(#0066c2);
+  box-shadow: $boxShadow;
+  }
+}
+
+//Third section
+#thirdSection{
+  background-color: #dbf0fd;
+  height: 300px;
+  font-family: $Montserrat;
+  padding-top:50px;
+.row{
+  justify-content: center;
+    }
+.statNum{
+  font-size: 2.3rem;
+  color:#0851f5;
+  margin:0;
+    }
+.statText{
+  font-size:1.5rem;
+    }
+  }
+
+//Fourth section
+#fourthSection{
+  background: $blueBackground;
+  font-family: $Montserrat;
+  color:white;
+
+.watchFlexLeft{
+  @include flexCenterCenter(row);
+  }
+  
+.watchFlexRight{
+  @include flexCenterCenter(column);
+  }
+}
+
+//Fifth Section
+#fifthSection{
+  font-family: $Montserrat;
+  width: 100%;
+  height: 480px;
+  position: relative;
+
+  &::before{
+    background: url('../img/worldmap.png');
+    content: "";
+    z-index: -1;
+    position: absolute;
+    opacity: 0.07;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-size: cover;
+  }
+  .formColumn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  input{
+    width:180px;
+    height:55px;
+    border-radius:25px;
+    display: inline;
+    border: 1px solid gray;
+    box-shadow: $boxShadow;
+  }
+  .socialRow{
+    padding-top:60px;
+    }
+  .btn{
+    @include mainBtn(#04e63c);
+  }
+}
+
+//Footer
+footer{
+  background: $blueBackground;
+  font-family: $Montserrat;
+  color:white;  
+  height:170px;
+  .col-md-6{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 45px 0px 0px 10px;
+  }
+  a{
+  display:inline;
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none !important;
+  color:white;
+  }
+}
