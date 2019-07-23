@@ -1,6 +1,13 @@
 $blueBackground: linear-gradient(to right,#065ce5,50%,#2eb5fb);
 $Montserrat: 'Montserrat', sans-serif;
 $boxShadow: 0 5px 6px -1px gray;
+$mobile: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
 
 @mixin flexCenterTop{
   display: flex;

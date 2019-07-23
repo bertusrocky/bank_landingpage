@@ -10,8 +10,21 @@
   color: white;
 }
 
+@media (max-width: 768px) {
+  #topSection .nav-link {
+    text-align: center;
+  }
+}
+
 #topSection .row {
   height: 650px;
+}
+
+@media (max-width: 768px) {
+  #topSection .row {
+    height: 450px;
+    text-align: center;
+  }
 }
 
 #topSection #headerLeftCol {
@@ -40,6 +53,12 @@
   margin-top: 2%;
 }
 
+@media (max-width: 768px) {
+  #topSection #headerRightCol {
+    display: none;
+  }
+}
+
 #topSection .btnMain {
   border-radius: 25px;
   padding: 13px;
@@ -52,6 +71,12 @@
 
 #topSection h1 {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #topSection h1 {
+    font-size: 2rem;
+  }
 }
 
 #topSection #phone {
@@ -82,9 +107,39 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  #topSection .loginBtn2 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #topSection .mainButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #secondSection {
   background-color: #dbf0fd;
   height: 420px;
+}
+
+@media (max-width: 768px) {
+  #secondSection {
+    height: 1050px;
+  }
 }
 
 #secondSection .card {
@@ -97,9 +152,26 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 768px) {
+  #secondSection .card {
+    margin-top: 10px;
+    height: 330px;
+    padding-top: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 #secondSection h3 {
   padding-top: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #secondSection h3 {
+    padding-top: 0px;
+    font-size: 1.5rem;
+  }
 }
 
 #secondSection .btn {
@@ -119,6 +191,12 @@
   height: 300px;
   font-family: "Montserrat", sans-serif;
   padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  #thirdSection {
+    display: none;
+  }
 }
 
 #thirdSection .row {
@@ -142,6 +220,23 @@
   background: linear-gradient(to right, #065ce5, 50%, #2eb5fb);
   font-family: "Montserrat", sans-serif;
   color: white;
+}
+
+@media (max-width: 768px) {
+  #fourthSection {
+    text-align: center;
+  }
+  #fourthSection h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #fourthSection .swatch {
+    width: 222px;
+    height: 260px;
+    margin-bottom: 10px;
+  }
 }
 
 #fourthSection .watchFlexLeft {
@@ -183,6 +278,18 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  #fifthSection {
+    height: 370px;
+  }
+  #fifthSection h2 {
+    font-size: 1.9rem;
+  }
+  #fifthSection a {
+    display: none;
+  }
+}
+
 #fifthSection::before {
   background: url("../img/worldmap.png");
   content: "";
@@ -209,6 +316,24 @@
           justify-content: space-evenly;
 }
 
+@media (max-width: 768px) {
+  #fifthSection .formColumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #fifthSection input {
   width: 180px;
   height: 55px;
@@ -219,8 +344,20 @@
           box-shadow: 0 5px 6px -1px gray;
 }
 
+@media (max-width: 768px) {
+  #fifthSection input {
+    margin-bottom: 15px;
+  }
+}
+
 #fifthSection .socialRow {
   padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  #fifthSection .socialRow {
+    padding-top: 10px;
+  }
 }
 
 #fifthSection .btn {
@@ -233,12 +370,24 @@
   background-color: #04e63c;
 }
 
+@media (max-width: 768px) {
+  #fifthSection #socialIcons {
+    display: none;
+  }
+}
+
 footer {
   background: -webkit-gradient(linear, left top, right top, from(#065ce5), color-stop(50%), to(#2eb5fb));
   background: linear-gradient(to right, #065ce5, 50%, #2eb5fb);
   font-family: "Montserrat", sans-serif;
   color: white;
   height: 170px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 200px;
+  }
 }
 
 footer .col-md-6 {
@@ -253,6 +402,25 @@ footer .col-md-6 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 45px 0px 0px 10px;
+}
+
+@media (max-width: 768px) {
+  footer .col-md-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 10px;
+  }
 }
 
 footer a {
