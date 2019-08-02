@@ -58,7 +58,7 @@ sr.reveal('.watchFlexRight', {
   duration: 2500,
   viewFactor: 0.4,
   origin: 'bottom',
-  distance: '80px'
+  distance: '75px'
   });
 
 sr.reveal('.formColumn', {
