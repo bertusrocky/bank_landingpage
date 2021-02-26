@@ -81,12 +81,12 @@
 
 #topSection #phone {
   max-width: 100%;
-  height: 26%;
+  height: 65%;
 }
 
 #topSection .navbar-brand {
   margin-left: 8% !important;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.7rem;
   font-weight: bold;
 }
